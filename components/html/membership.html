@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <img src="../../assets/img/logo.svg" alt="" class="header__logo img-d">
+        </div>
+        <div class="nav">
+            <img src="../../assets/img/logo.svg" alt="" class="header__logo">
+            <ul>
+                <li><a href="../../index.html"> صفحه اصلی</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="contact-us.html">تماس با ما</a></li>
+                <li><a href="FAQ.html">عضویت داروخانه ها</a></li>
+                <li class="a-d-none"><a href="#" class="a-d-none">قوانین و شرایط</a></li>
+            </ul>
+            <button class="push-left button-d-none" ><p> دانلود درمانیتو</p></button>
+        </div>
+
+        <div id="mySidepanel" class="sidepanel">
+          <img src="../../assets/img/logo.svg" alt="logo" class="sidepanel__img">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="../../index.html" class="a-margin sidepanel__link active">صفحه اصلی</a>
+          <a href="membership.html" class="sidepanel__link">عضویت در داروخانه ها</a>
+          <a href="#" class="sidepanel__link">درباره ما</a>
+          <a href="custom.html" class="sidepanel__link">تماس باما</a>
+          <a href="FAQ.html" class="sidepanel__link">سوالات متداول</a>
+          <a href="#" class="a-border sidepanel__link">قوانین و شرایط</a>
+          <a href="#" class="sidepanel__link">
+              <button class="a-btn">دانلود مستقیم درمانیتو</button>
+          </a>
+        </div>
+        
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </nav>
+  </header>
+    <section class="membership">
+        <div class="membership__info">
+            <h3>شما هم در سلامت و بهبود مردم کشورمون موثر باشید</h3>
+            <p> با ثبت نام به عنوان داروخانه یا فروشگاه و داروخانه شما هم به سیستم درمان کمک کنید و به هزاران کاربر خدمات ارائه بدین و روزانه درآمد سفارش های خودتون رو تسویه کنید</p>
+            <div class="membership__info__input">
+                <input type="text" placeholder="شماره همراه را وارد کنید 900 36 61 0912">
+                <button>ثبت نام سریع</button> 
+            </div>
+        </div>
+        <div class="membership__drugstore">
+            <div class="membership__drugstore--up">
+                <div class="membership__drugstore__img">
+                    <img src="../../assets/img/Human.svg" alt="Human"> 
+                </div>
+                <div>
+                    <p class="membership__drugstore--up--text">شبانه روزی</p>
+                    <h3 class="membership__drugstore--up--header">نام داروخانه شما</h3>
+                    <div class="membership__drugstore--up--footer">
+                        <img src="../../assets/img/map-marker.svg" alt="map-marker">
+                        <p>درمانیتو ، سرویس داروخانه ، داروخانه شما</p>
+                    </div>
+                </div>
+            </div>
+            <div class="membership__drugstore--middle membership__display--block">
+                <div class="membership__drugstore__img">
+                    <img src="../../assets/img/Human.svg" alt="Human" style="width: 52px; height: 53px;">
+                </div>
+                <div>
+                    <h3>نام داروخانه شما</h3>
+                    <div class="membership__drugstore--middle--footer">
+                        <img src="../../assets/img/map-marker.svg" alt="map-marker">
+                        <p>درمانیتو ، سرویس داروخانه ، داروخانه شما</p>
+                    </div>
+                </div>
+            </div>
+            <div class="membership__drugstore--down membership__display--block">
+                <div class="membership__drugstore__img">
+                    <img src="../../assets/img/Human.svg" alt="Human" style="width: 52px; height: 53px;">
+                </div>
+                <div>
+                    <p class="membership__drugstore--down--text">شبانه روزی</p>
+                    <h3>نام داروخانه شما</h3>
+                    <div class="membership__drugstore--middle--footer">
+                        <img src="../../assets/img/map-marker.svg" alt="map-marker">
+                        <p>درمانیتو ، سرویس داروخانه ، داروخانه شما</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+      <div class="membership__numbers">
+          <div class="membership__numbers__block">
+              <p>تعداد کاربران درمانیتو</p>
+              <h1>120,000+</h1>
+          </div>
+          <div class="membership__numbers__block">
+              <p>تعداد داروخانه و مراکز</p>
+              <h1>120,000+</h1>
+          </div>
+          <div class="membership__numbers__block">
+              <p>تعداد داروخانه و مراکز</p>
+              <h1>120,000+</h1>
+          </div>
+      </div>
+    </section>  
+    <section>
+      <div class="membership__option">
+          <h3>در درمانیتو چه خدمات ارائه خواهید داد؟</h3>
+          <p class="membership__option__text--desktop">خدمت مورد نظر خود را برای ثبت نام انتخاب کنید</p>
+          <p class="membership__option__text--phone">شما میتونید شماره خودتون یا دوست خودتون رو وارد کنید تا لینک دانلود پیامک بشه</p>
+          <div class="membership__option__card">
+              <div class="membership__option__card--drugstore">
+                  <img src="../../assets/img/DrugStore2.svg" alt="DrugStore2">
+                  <h2>داروخانه</h2>
+                  <p class="membership__option__card--drugstore-text">مایل هستم فقط بعنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم </p>
+                  <button>ثبت نام </button>
+              </div>
+              <div class="membership__option__card--makeup">
+                  <img src="../../assets/img/MakeupStore.svg" alt="MakeupStore">
+                  <h2>فروشگاه آرایشی و بهداشتی</h2>
+                  <p>مایل هستم فقط بعنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم </p>
+                  <button>ثبت نام </button>
+              </div>
+          </div>
+      </div>
+    </section>  
+    <section class="support">
+        <div class="support__information">
+          <h3 class="support__header--desktop"> پشتیبانی درمانیتو</h3>
+          <h3 class="support__header--phone">پشتیبانی درمانیتو</h3>
+          <p>پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
+        </div>
+        <img src="../../assets/img/support-phone-number.svg" alt="support-phone-number" /> 
+    </section>
+      <footer>
+        <section class="footer">
+          <div class="footer__info">
+            <img src="../../assets/img/logo.svg" alt="logo" />
+            <h3>سوپر اپلیکیشن حوزه درمان و سلامت</h3>
+            <p>
+              تمام حقوق مادی و معنوی این وبسایت متعلق به <br />
+              درمانیتو است
+            </p>
+            <div class="footer__info__social">
+              <img src="../../assets/img/linkedin.svg" alt="linkedin" />
+              <img src="../../assets/img/twitter.svg" alt="twitter" />
+              <img src="../../assets/img/instagram.svg" alt="instagram" />
+            </div>
+          </div>
+          <div class="footer__service footer__display--block">
+            <h3>خدمات درمانیتو</h3>
+            <ul>
+              <li class="footer__service__li--border">داروخانه آنلاین</li>
+              <li>فروشگاه آنلاین</li>
+              <li>ویزیت آنلاین</li>
+              <li>پرونده پزشکی</li>
+            </ul>
+          </div>
+          <div class="footer__pages footer__display--block">
+            <h3>صفحات درمانیتو</h3>
+            <ul>
+              <a href="contact-us.html"><li>تماس باما</li></a>
+              <li>درباره ما</li>
+              <a href="FAQ.html"><li>سوالات متداول</li></a>
+              <li>قوانین و شرایط</li>
+            </ul>
+          </div>
+          <div class="footer__download footer__display--block">
+            <h3>دانلود درمانیتو</h3>
+            <div>
+              <img src="../../assets/img/black-bazar.svg" alt="black-bazar" />
+              <img src="../../assets/img/sib-app-black.svg" alt="sib-app-black" />
+            </div>
+          </div>
+        </section>
+      </footer>
+</body>
+<script src="../js/script.js"></script>
+</html>

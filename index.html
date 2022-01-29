@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <img src="assets/img/logo.svg" alt="logo" class="header__logo img-d">
+        </div>
+        <div class="nav">
+            <img src="assets/img/logo.svg" alt="logo" class="header__logo">
+            <ul>
+                <li><a href="#"> صفحه اصلی</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="components/html/contact-us.html">تماس با ما</a></li>
+                <li><a href="components/html/membership.html">عضویت داروخانه ها</a></li>
+                <li class="a-d-none"><a href="#" class="a-d-none">قوانین و شرایط</a></li>
+            </ul>
+            <button class="push-left button-d-none" ><p> دانلود درمانیتو</p></button>
+        </div>
+
+        <div id="mySidepanel" class="sidepanel">
+          <img src="assets/img/logo.svg" alt="logo" class="sidepanel__img">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#" class="a-margin sidepanel__link active">صفحه اصلی</a>
+          <a href="components/html/membership.html" class="sidepanel__link">عضویت در داروخانه ها</a>
+          <a href="#" class="sidepanel__link">درباره ما</a>
+          <a href="components/html/custom.html" class="sidepanel__link">تماس باما</a>
+          <a href="components/html/FAQ.html" class="sidepanel__link">سوالات متداول</a>
+          <a href="#" class="a-border sidepanel__link">قوانین و شرایط</a>
+          <a href="#" class="sidepanel__link">
+              <button class="a-btn">دانلود مستقیم درمانیتو</button>
+          </a>
+        </div>
+        
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </nav>
+  </header>
+    <section class="content">
+      <div class="content__information">
+        <h1>اپلیکیشن درمانیتو</h1>
+        <p>درمانیتو،سامانه هوشمند درمان و سلامت</p>
+        <div class="content__information__button">
+          <button class="content__information__button--download">دانلود درمانیتو</button>
+          <button class="content__information__button--login">عضویت داروخانه ها</button>
+        </div>
+      </div>
+      <div class=" content__image">
+        <img src="assets/img/Doctor-with-background.svg" alt="Doctor-with-background" class="content__image--cloud" />
+        <img src="assets/img/doctor.svg" alt="doctor" class="content__image__display--none">
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__video">
+        <img src="assets/img/about.svg" alt="about" />
+      </div>
+      <div class="about__description__display--none">
+        <h2>درمانیتو چی هست؟</h2>
+        <p>درمانیتو یک سوپر اپلیکیشن هست که سعی داره با سرویس های متفاوتش روند درمان شمارو سریع تر کنه؛شما با درمانیتو میتونید نسخه خودتون رو برای تمام داروخانه های اطراف خودتون بفرستید</p>
+      </div>
+      <div class="about__container">
+        <h2>درباره درمانیتو</h2>
+        <p><span>
+          درمانیتو یک سامانه است که امکان سفارش دارو،محصولات آرایشی بهداشتی نوبت
+          گیری و مشاوره پزشکان را به راحتی و بصورت آنلاین فراهم کرده است.
+          </span>
+        </p>
+        <div class="about__container__cards">
+          <div class="about__card">
+            <div class="about__card__img">
+              <img src="assets/img/verify.svg" alt="verify" />
+            </div>
+            <p>جستجو سریع</p>
+          </div>
+          <div class="about__card">
+            <div class="about__card__img">
+              <img src="assets/img/time.svg" alt="time" />
+            </div>
+            <p>به صرفه</p>
+          </div>
+          <div class="about__card">
+            <div class="about__card__img">
+              <img src="assets/img/easyway.svg" alt="easyway" />
+            </div>
+            <p>راحت</p>
+          </div>
+          <div class="about__card">
+            <div class="about__card__img">
+              <img src="assets/img/searchway.svg" alt="searchway" />
+            </div>
+            <p>جستجوی سریع</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="option__container">
+      <h2>امکانات درمانیتو</h2>
+      <div class="option__content">
+        <div class="option__content__box">
+          <div class="grid__container">
+            <div class="grid--pharmacy">
+              <img src="assets/img/pharmacy.svg" alt="pharmacy" />
+              <p>داروخانه</p>
+            </div>
+            <div class="grid--storefade">
+              <img src="assets/img/storefade.svg" alt="storefade" />
+              <p>فروشگاه</p>
+            </div>
+            <div class="grid--doctor-toys">
+              <img src="assets/img/doctor-toys.svg" alt="doctor-toys" />
+              <p>ویزیت آنلاین</p>
+            </div>
+            <div class="grid--calender">
+              <img src="assets/img/calender.svg" alt="calender" />
+              <p>نوبت دهی آنلاین</p>
+            </div>
+          </div>
+        </div>
+        <div class="option__content__info">
+          <h3>داروخانه آنلاین</h3>
+          <p>
+            در سرویس داروخانه شما میتوانید نسخه دارویی یا محصول بهداشتی خودتون رو
+            برای پیدا شدن به داروخانه و فروشگاه ها سفارش بدید
+          </p>
+          <div class="option__content__container--step">
+              <div>
+                  <div class="option__content--step-first">
+                      <div class="img--arrow-down">
+                          <img src="assets/img/arrow-down.svg" alt="arrow-down" />
+                      </div>
+                  </div>
+                  <div class="option__content--step-second">
+                      <div class="img--arrow-down">
+                          <img src="assets/img/arrow-down.svg" alt="arrow-down" />
+                      </div>
+                  </div>
+                  <div class="option__content--step-third">
+                      <div>
+                          <img src="assets/img/green-tik.svg" alt="green-tik" />
+                      </div>
+                  </div>
+              </div>
+              <div class="option__content__container--step-text">
+                  <div>
+                      <h3>قدم اول</h3>
+                      <p>
+                          وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید
+                      </p>
+                  </div>
+                  <div>
+                      <h3>قدم دوم</h3>
+                      <p>بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید</p>
+                  </div>
+                  <div>
+                      <h3>قدم سوم</h3>
+                      <p>
+                          اگر نتیجه جستجوی نسخه موفقیت آمیز باشه باید منتظر تحویل سفارش
+                          باشید
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="download__container">
+      <div class="download__container__infoBox">
+        <h2>دانلود اپلیکیشن درمانیتو</h2>
+        <p>برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</p>
+        <div class="download__container__infoBox__input">
+            <input type="text" placeholder=" شماره همراه را وارد کنید 900 36 61 0912">
+            <button>بفرست</button>
+        </div>
+        <div class="download__button">
+          <button class="download__button--first">
+            <div>
+              <img src="assets/img/download.svg" alt="download">
+            <p>دانلود مستقیم</p>
+            </div>
+          </button>  
+          <button>
+            <img src="assets/img/bazar.svg" alt="bazar" class="img-d-block"/>
+          </button>  
+          <button>
+            <img src="assets/img/sibapp.svg" alt="sibapp" class="img-d-block"/>
+          </button>  
+        </div>
+      </div>
+      <div class="download__container__img--app-prev">
+        <img src="assets/img/app-prev.svg" alt="app-prev" />
+      </div>
+    </section>
+    <section class="login__container">
+      <div class="login__container--inside">
+        <div class="login__container--inside__infoBox">
+          <h2>عضویت داروخانه یا مراکز درمانی</h2>
+          <p>
+            اگر به عنوان داروخانه یا مرکز درمانی قصد دارید در روند درمان و کسب
+            کار خودتان
+            تغییری ایجاد کنید درمانیتو منتظر شماست
+          </p>
+          <div class="login__container__infoBox__input">
+            <input type="text" placeholder="شماره همراه را وارد کنید 900 36 61 0912">
+            <button>ثبت نام سریع</button>
+          </div>
+        </div>
+        <div class="login__container--inside__img">
+          <img src="assets/img/subscribe-img.svg" alt="subscribe-img" />
+        </div>
+      </div>
+    </section>
+    <section class="support">
+      <div class="support__information">
+        <h3 class="support__header--desktop"> پشتیبانی درمانیتو</h3>
+        <h3 class="support__header--phone">پشتیبانی درمانیتو</h3>
+        <p>پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
+      </div>
+      <img src="assets/img/support-phone-number.svg" alt="support-phone-number" /> 
+  </section>
+    <footer>
+      <section class="footer">
+        <div class="footer__info">
+          <img src="assets/img/logo.svg" alt="logo" />
+          <h3>سوپر اپلیکیشن حوزه درمان و سلامت</h3>
+          <p>
+            تمام حقوق مادی و معنوی این وبسایت متعلق به <br />
+            درمانیتو است
+          </p>
+          <div class="footer__info__social">
+            <img src="assets/img/linkedin.svg" alt="linkedin" />
+            <img src="assets/img/twitter.svg" alt="twitter" />
+            <img src="assets/img/instagram.svg" alt="instagram" />
+          </div>
+        </div>
+        <div class="footer__service footer__display--block">
+          <h3>خدمات درمانیتو</h3>
+          <ul>
+            <li class="footer__service__li--border">داروخانه آنلاین</li>
+            <li>فروشگاه آنلاین</li>
+            <li>ویزیت آنلاین</li>
+            <li>پرونده پزشکی</li>
+          </ul>
+        </div>
+        <div class="footer__pages footer__display--block">
+          <h3>صفحات درمانیتو</h3>
+          <ul>
+            <a href="components/html/contact-us.html"><li>تماس باما</li></a>
+            <li>درباره ما</li>
+            <a href="components/html/FAQ.html"><li>سوالات متداول</li></a>
+            <li>قوانین و شرایط</li>
+          </ul>
+        </div>
+        <div class="footer__download footer__display--block">
+          <h3>دانلود درمانیتو</h3>
+          <div>
+            <img src="assets/img/black-bazar.svg" alt="black-bazar" />
+            <img src="assets/img/sib-app-black.svg" alt="sib-app-black" />
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+    <script src="components/js/script.js"></script>
+</html>

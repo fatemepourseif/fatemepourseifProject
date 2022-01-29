@@ -1,0 +1,2768 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: yekan;
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-decoration: none;
+    list-style: none;
+}
+@font-face {
+    font-family: yekan;
+    src: url(font/Yekan.woff);
+}
+.sidepanel  {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 632px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    float: left;
+    display: none;
+  }
+  .img-d{
+      display: none;
+  }
+  .sidepanel a {
+    padding: 3px 32px 12px 32px;
+    text-decoration: none;
+    color: #000;
+    opacity: .7;
+    display: block;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 27.5px;
+  }
+   .active{
+    color: #1894ff!important;
+    font-size: 16px;
+    font-weight: bold!important;
+    border-right: 4px solid #1894ff;
+    padding-right: 10px!important;
+    margin-right: 22px;
+    max-height: 30px;
+    overflow-y: hidden;
+  }
+  
+  .sidepanel .closebtn {
+    font-size: 40px;
+    color: #1894ff;
+    float: left;
+    margin-top: -66px;
+  }
+.sidepanel__img{
+    float: right;
+    margin-top: -45px;
+    margin-right: 32px;
+}
+  .openbtn {
+      display: none;
+    cursor: pointer;
+    color: #1894ff;
+    padding: 10px 15px;
+    border: none;
+    float: left;
+    background-color: white;
+    margin-top: -61px;
+    margin-left: 18px;
+    font-size: 30px;
+  }
+  .a-btn{
+    width: 170px;
+    height: 52px;
+    padding: 16px 23px 17px 17px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e6f3ff;
+    color: #1894ff;
+    font-size: 14px;
+    font-weight: bold;
+    overflow-y: hidden;
+  }
+  .a-border{
+      padding-bottom: 36px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  }
+  .nav{
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .d-none{
+    display: none;
+}
+.a-d-none{
+    display: none;
+}
+.nav ul li a{
+    margin: 0 0 0 37px;
+    opacity: 0.7;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    text-decoration: none;
+}
+.a-margin{
+    margin-top: 54px;
+}
+.nav button{
+    width: 170px;
+    height: 52px;
+    border: none;
+    color: #1894ff;
+    border-radius: 10px;
+    padding-right: 5px;
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.5);
+    background-color: #e6f3ff;
+    margin-top: 27px;
+    font-size: 16px;
+    font-weight: bold;
+}
+a.active,a:hover{
+    transition: .5s;
+}
+  header__logo{
+    margin-top: 30px;
+    width: 141px;
+    height: 51px;
+}
+.nav ul{
+    margin-right: 80px;
+    margin-top: 15px;
+    overflow-y: hidden;
+}
+.nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+@media (max-width: 1250px){
+    .nav button{
+        width: 150px;
+        height: 49px;
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 1228px){
+    .nav button{
+        width: 140px;
+        height: 49px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 828px){
+    header__logo{
+        width: 120px;
+        height: 45px;
+        margin-right: 15px;
+    }
+    .nav ul{
+        margin-right: 10px;
+    }
+    .nav button{
+        width: 130px;
+        height: 49px;
+    }
+    .nav ul li a{
+        margin-left: 30px;
+        font-size: 15px;
+    }
+}
+@media only screen and ( max-width: 700px){
+    .openbtn{
+        display: block;
+        float: left;
+    }
+    .nav{
+        display: none;
+    }
+    .img-d{
+        display: block;
+    }
+}
+ .content{
+    display: flex;
+    justify-content: space-around;
+}
+.content__information {
+    padding-top: 228px;
+    width: 799px;
+    padding-right: 100px;
+}
+.content__information h1{
+    font-size:36px;
+    color: #1894ff;
+    line-height: 56px;
+    margin: 0 0 25.5px 23px;
+}
+.content__information p{
+    line-height: 32px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: right;
+}
+.content__information .content__information__button--download{
+    color: #e6f3ff;
+    background-color: #1894ff;
+    border: 0;
+    width: 170px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all .5s;
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.5);
+    margin: 0 0 0 14px;
+    padding: 11px 39px 17px 37px;
+}
+.content__information .content__information__button--download:hover{
+    color: #1894ff;
+    background-color: #e6f3ff;
+}
+.content__information .content__information__button--login{
+    color: #1894ff;
+    background-color: white;
+    border: 1px solid #1894ff;
+    width: 170px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all .5s;
+    margin:0;
+    padding: 10px 22px 16px 18px;
+}
+.content__information .content__information__button--login:hover{
+    background-color: #e6f3ff;
+}
+.content__information p{
+    margin-bottom: 30px;
+}
+.content__image__display--none{
+    display: none;
+}
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 134px;
+
+}
+.about__video{
+    width: 356.67px;
+    height: 356.67px;
+}
+.about__container{
+    width: 546.5px;
+    margin-top: 20px;
+}
+.about__container h2{
+    color: #2361b5;
+    font-size: 20px;
+    border-right: 4px solid #00de9a;
+    padding-right: 10px;
+    margin: 0 0 30px 24px;
+    line-height: 27px;
+    overflow-y: hidden;
+}
+.about__card__img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
+    background-color: #ffffff;
+    text-align: center;
+    padding: 18px 23px 18px 24px;
+    margin: 62px 13px 13.5px 72px;
+}
+.about__container p{
+    font-size: 16px;
+    line-height: 36px;
+    margin-left: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+
+}
+.about__container__cards{
+    display: flex;
+    justify-content: space-between;
+}
+.about__container__cards p{
+    text-align: center;
+    font-size: 14px;
+    color: #141414;
+    font-weight: 300;
+}
+.about__video img{
+    width: 356.67px;
+    height: 340.67px;
+}
+.about__description__display--none{
+    display: none;
+    padding: 20px;
+}
+.about__description__display--none h2{
+    font-size: 20px;
+    color: #1894ff;
+    border-right: 3px solid #00de9a;
+    max-height: 30px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.about__description__display--none p{
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: lighter;
+}
+.option__content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns:165px 165px;
+    grid-template-rows: 165px 165px;
+    grid-gap: 30px;
+    padding: 18px;
+    margin: 0;
+}
+  
+.grid__container > div {
+    text-align: center;
+    padding: 28px 34px 5px 34px;
+    font-size: 30px;
+}
+  
+  
+.grid--pharmacy {
+    grid-area: 1 / 1 / 1 / 2;
+    text-align: center;
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
+    border-radius: 20px;
+}
+.grid--pharmacy p{
+    font-size: 14px;
+    color: #2361b5;
+    margin-top: 10px;
+}
+.grid--storefade {
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(24, 148, 255, 0.1);
+    filter: grayscale(90%);
+    border-radius: 20px;
+}
+.grid--storefade p{
+    font-size: 14px;
+    color: #2361b5;
+}
+.grid--storefade:hover{
+    filter: grayscale(0%);
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
+    color: #2361b5;
+}
+.grid--doctor-toys:hover{
+    filter: grayscale(0%);
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
+    color: #2361b5;
+}
+.grid--calender:hover{
+    filter: grayscale(0%);
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
+    color: #2361b5;
+}
+.grid--doctor-toys {
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(24, 148, 255, 0.1);
+    filter: grayscale(90%);
+    border-radius: 20px;
+}
+.grid--doctor-toys p{
+    font-size: 14px;
+    color: #2361b5;
+}
+.grid--calender {
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(24, 148, 255, 0.1);
+    filter: grayscale(90%);
+    border-radius: 20px;
+}
+.grid--calender p{
+    font-size: 14px;
+    color: #2361b5;
+}
+.option__content__box{
+    width:400px ;
+    height: 446px;
+}
+.option__container h2{
+    font-size: 20px;
+    color: #2361b5;
+    border-right: 4px solid #00de9a;
+    padding-right: 10px;
+    margin: 200px 18px 28px 50px;
+}
+.option__content__info {
+    width: 508px;
+    height: 425px;
+    margin-top: 37px;
+    margin-right: 3px;
+}
+.option__content__info h3{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.option__content__info > p{
+    line-height: 36px;
+    font-size: 14px;
+}
+.option__content--step-first img{
+    width: 34px;
+    height: 34px;
+    margin-left: 15px;
+}
+.option__content--step-second img{
+    width: 34px;
+    height: 34px;
+    margin-left: 15px;
+
+}
+.option__content--step-third img{
+    width: 34px;
+    height: 34px;
+}
+.option__content__container--step{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.option__content__container--step-text h3{
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.option__content__container--step-text p{
+    font-size: 14px;
+    padding-right: 20px;
+    padding-bottom: 22px;
+    font-weight: 300;
+}
+.img--arrow-down{
+    display: flex;
+    flex-flow: column;
+}
+.img--arrow-down::after{
+    content: '';
+    width: 1.1px;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 16px;
+}
+.circle-check{
+    padding: 1px 10px;
+    background-color: #00de9a;
+    border-radius: 50px;
+}
+.download__container{
+    background-color: #1894ff;
+    background-image: url(img/bg1.svg),url(img/bg2.svg);
+    background-repeat: no-repeat, no-repeat ;
+    background-position: -120px -60px, -10px -250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.download__container__infoBox__input{
+    width: 520px;
+    height: 65px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 37px;
+}
+.download__container__infoBox__input input{
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: 0;
+    padding-top: 17px;
+    padding-right: 10px;
+}
+.download__container__infoBox__input button{
+    width: 100px;
+    height: 45px;
+    background-color: #1894ff;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.download__container__infoBox{
+    padding-top: 160px;
+}
+.download__container__infoBox h2{
+    color: white;
+    font-size: 24px;
+}
+.download__container__infoBox  p{
+    color: white;
+    font-size: 16px;
+    padding-top: 26px;
+}
+.download__button{
+    padding-top: 37px;
+}
+.download__button--first div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.download__button--first div p{
+    margin-top: -12px;
+    
+    margin-bottom: 15px;
+}
+.download__button button{
+    margin-left: 15px;
+    background-color: #2361b5;
+
+}
+.download__button button{
+    width: 179px;
+    height: 55px;
+    overflow-y: hidden;
+    border: 0;
+    border-radius: 10px;
+}
+.download__container__infoBox__input input::placeholder{
+    font-size: 16px;
+    color: #666666;
+    opacity: 0.71;
+}
+.download__container__img--app-prev img{
+    float: left;
+    margin-top: 40px;
+}
+.login__container{
+    background-image: url(img/subscription-bg.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+
+}
+.login__container--inside__infoBox{
+    width: 520px;
+}
+.login__container--inside{
+    background-color: white;
+    width: 1088px;
+    height: 430.38px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
+    padding-top: 86px;
+    display: flex;
+    justify-content: space-evenly;
+    margin:183px auto;
+}
+.login__container--inside h2{
+    color: #2361b5;
+    font-size: 20px;
+    border-right: 4px solid #00de9a;
+    padding-right: 13px;
+    margin-bottom: 35px;
+}
+.login__container--inside p{
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 300;
+}
+.login__container__infoBox__input{
+    width: 520px;
+    height: 65px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    margin-top: 37px;
+}
+.login__container__infoBox__input input::placeholder{
+    font-size: 16px;
+    color: #666666;
+    opacity: 0.71;
+}
+.membership__info__input{
+    width: 500px;
+    height: 65px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    margin-top: 37px;
+}
+
+.login__container__infoBox__input input{
+    width: 350px;
+    height: 50px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: 0;
+    padding-top: 17px;
+    padding-right: 21px;
+}
+.membership__info__input input{
+    width: 350px;
+    height: 50px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: 0;
+    padding-top: 17px;
+    padding-right: 10px;
+}
+.membership__info__input input::placeholder{
+    color: #666666;
+    opacity: 0.71;
+    font-size: 16px;
+}
+.login__container__infoBox__input button{
+    width: 130px;
+    height: 45px;
+    background-color: #1894ff;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.membership__info__input button{
+    width: 130px;
+    height: 45px;
+    background-color: #1894ff;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.login__container--inside__img img{
+    padding-right: 20px;
+    margin-top: 21px;
+}
+.support h3{
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+}
+.support p{
+    color: white;
+    font-size: 14px;
+    padding-top: 8px;
+} 
+.support{
+    width: 100%;
+    height: 130px;
+    background-color: #1894ff;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin: 40px auto;
+}
+.support img{
+    width: 260px;
+    height: 52px;
+    margin-top: -10px;
+}
+.support__information{
+    display: flex;
+}
+.support__header--phone{
+    display: none;
+}
+.footer{
+    margin:30px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__info{
+    padding-right: 50px;
+}
+.footer__info h3{
+    font-size: 14px;
+    line-height: 36px;
+}
+.footer__info p{
+    font-size: 14px;
+    line-height: 26px;
+    color: #707070;
+}
+.footer__info__social img{
+    padding-top: 33px;
+    padding-left: 10px;
+}
+.footer__service{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.footer__service h3{
+    font-size: 16px;
+    padding-bottom: 22px;
+}
+.footer__service ul li{
+    padding-bottom: 20px;
+    color: #707070;
+    transition: all .5s;
+}
+.footer__service__li--border{
+    border-right: 2px solid #00de9a;
+    padding-right: 12px;
+    padding-bottom:2px!important ;
+    margin-bottom: 18px;
+    color: #1894ff!important;
+    font-weight: bold!important;
+}
+.footer__pages{
+    padding-left: 50px;
+}
+.footer__pages h3{
+    font-size: 16px;
+    padding-bottom: 22px;
+}
+.footer__pages ul li{
+    padding-bottom: 20px;
+    color: #707070;
+    transition: all .5s;
+
+}
+.footer__download h3{
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.footer__download img{
+    padding-left: 15px;
+}
+.membership__info h3{
+    color: #1894ff;
+    font-size: 30px;
+    margin-bottom: 22.5px;
+    width: 405px;
+}
+.membership__info p{
+    font-size: 16px;
+    overflow: break-word;
+    color: #707070;
+    line-height: 36px;
+    width: 444px;
+    font-weight: 300;
+    line-height: 2.25;
+}
+.membership__info{
+    margin-top: 160px;
+    width: 510px;
+    height: 348px;
+}
+.membership__drugstore--up{
+    width: 438px;
+    height: 125px;
+    border-radius: 40px;
+    box-shadow: 0 0 50px 0 rgba(24, 148, 255, 0.1);
+    display: flex;
+    padding-top: 15px;
+    padding-right: 24px;
+    margin-top: 116px;
+    margin-right: 25px;
+}
+.membership__drugstore--up--footer{
+    display: flex;
+    padding-top: 20px;
+}
+.membership__drugstore--up--footer img{
+    padding-left: 10px;
+}
+.membership__drugstore__img{
+    padding-left: 20px;
+}
+.membership{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+}
+.membership__drugstore--up--text{
+    width: 80px;
+    height: 28px;
+    background-color: #1894ff;
+    border-radius: 20px;
+    float: left;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 3px;
+}
+.membership__drugstore--middle{
+    width: 306px;
+    height: 87px;
+    border-radius: 40px;
+    box-shadow: 0 0 50px 0 rgba(24, 148, 255, 0.1);
+    display: flex;
+    padding-top: 15px;
+    padding-right: 24px;
+    margin-top: 35px;
+    margin-right: 67px;
+    opacity: .8;
+}
+.membership__drugstore--middle--footer{
+    display: flex;
+    padding-top: 10px;
+}
+.membership__drugstore--middle--footer img{
+    padding-left: 10px;
+}
+.membership__drugstore--middle h3{
+    font-size: 13px;
+}
+.membership__drugstore--middle p{
+    font-size: 8px;
+}
+.membership__drugstore--down{
+    width: 306px;
+    height: 87px;
+    border-radius: 40px;
+    box-shadow: 0 0 50px 0 rgba(24, 148, 255, 0.1);
+    display: flex;
+    padding-top: 15px;
+    padding-right: 24px;
+    margin-top: 33px;
+    margin-right: 203px;
+    opacity: .6;
+
+}
+.membership__drugstore--down h3{
+    font-size: 13px;
+}
+.membership__drugstore--down p{
+    font-size: 8px;
+}
+.membership__drugstore--down--text{
+    width: 55px;
+    height: 19px;
+    background-color: #1894ff;
+    border-radius: 20px;
+    float: left;
+    color: white;
+    font-size: 8px;
+    text-align: center;
+    padding-top: 3px;
+}
+.membership__numbers{
+    margin-top: 177px;
+    width: 100%;
+    height: 150px;
+    background-color: #1894ff;
+    margin-bottom: 103px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(img/nimdayere-l.svg),url(img/nimdayere-r.svg);
+    background-repeat: no-repeat, no-repeat ;
+    background-position: 1251px,-17px;
+
+}
+.membership__numbers__block{
+    overflow-y: hidden;
+}
+.membership__numbers__block p{
+    color: white;
+    font-size: 16px;
+}
+.membership__numbers__block h1{
+    color: white;
+    font-size: 36px;
+    font-weight: normal;
+}
+.membership__option{
+    margin: 40px auto;
+    
+}
+.membership__option h3{
+    font-size: 20px;
+    color: #1894ff;
+    border-right: 3px solid #00de9a;
+    padding: 0 20px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.membership__option > p{
+    font-size: 16px;
+    line-height: 36px;
+    margin-right: 70px;;
+}
+.membership__option__text--phone{
+    display: none;
+}
+.membership__option__card--drugstore{
+    width: 440px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 0 0 50px 0 rgba(24, 148, 255, 0.1);
+    margin-top: 40px;
+}
+.membership__option__card--drugstore img{
+    padding-top: 54px;
+    padding-right: 123px;
+}
+.membership__option__card--drugstore h2{
+    color: #1894ff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 45px;
+    padding-right: 25px;
+}
+.membership__option__card--drugstore-text{
+    font-size: 14px;
+    line-height: 32px;
+    padding-right: 25px;
+
+}
+.membership__option__card--drugstore button{
+    width: 170px;
+    height: 52px;
+    color: white;
+    background-color: #1894ff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin: 33px 133px;
+}
+.membership__option__card--makeup{
+    width: 440px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 0 0 50px 0 rgba(24, 148, 255, 0.1);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.membership__option__card{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.membership__option__card--makeup img{
+    padding-top: 54px;
+    padding-right: 153px;
+}
+.membership__option__card--makeup h2{
+    color: #1894ff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 45px;
+    padding-right: 25px;
+}
+.membership__option__card--makeup p{
+    font-size: 14px;
+    line-height: 32px;
+    padding-right: 25px;
+}
+.membership__option__card--makeup button{
+    width: 170px;
+    height: 52px;
+    color: white;
+    background-color: #1894ff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin: 33px 133px;
+}
+
+.question__title{
+    width: 100%;
+    height: 120px;
+    background-color: #1894ff;
+    background-image: url(img//cloudy-r.svg),url(img/cloudy-l.svg);
+    background-repeat: no-repeat, no-repeat ;
+    background-position: -152px -10px, 927px -7px;
+}
+.description__display--block{
+    margin-bottom: 100px;
+}
+.question__title h1{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 38px;
+}
+.question__infoBox{
+    margin: 0 auto;
+}
+.question__infoBox h2{
+    color: #2361b5;
+    border-right: 4px solid #00de9a;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 87px;
+    margin-right: 100px;
+}
+.question__cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 45px auto;
+}
+.question__cards--drugstore{
+    width: 160px;
+    height: 160px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
+    margin: 20px 5px;
+    padding-top: 26px;
+}
+.question__cards--drugstore p{
+    font-size: 14px;
+    color:#1894ff;
+    text-align: center;
+}
+.question__cards--drugstore img{
+    margin: 9px 47px;
+}
+.question__cards--shop{
+    width: 160px;
+    height: 160px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgba(24, 148, 255, 0.1);
+    margin: 20px 5px;
+    padding-top: 20px;
+}
+.question__cards--shop p{
+    font-size: 14px;
+    color:#707070;
+    text-align: center;
+}
+.question__cards--shop img{
+    margin: 9px 57px;
+    filter: grayscale(90%);
+}
+.question__cards--visit{
+    width: 160px;
+    height: 160px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgba(24, 148, 255, 0.1);
+    margin: 20px 5px;
+    padding-top: 20px;
+}
+.question__cards--visit p{
+    font-size: 14px;
+    color:#707070;
+    text-align: center;
+}
+.question__cards--visit img{
+    margin: 9px 57px;
+    filter: grayscale(90%);
+}
+.question__cards--online{
+    width: 160px;
+    height: 160px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgba(24, 148, 255, 0.1);
+    margin: 20px 5px;
+    padding-top: 20px;
+}
+.question__cards--online p{
+    font-size: 14px;
+    color:#707070;
+    text-align: center;
+}
+.question__cards--online img{
+    margin: 9px 44px;
+    filter: grayscale(90%);
+}
+.question__infoBox__description{
+    display: flex;
+    margin-top: 50px;
+    margin-right: 105px;
+}
+.border-bottom{
+    width: 80%;
+    padding-bottom: 30px;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+}
+.border-top{
+    width: 80%;
+    padding-top: 30px;
+    border-top: .5px solid rgba(0, 0, 0, 0.1);
+}
+.question__infoBox__description h3{
+    padding-right: 46px;
+    font-size: 16px;
+    color: #2361b5;
+    
+}
+.description-minus{
+    font-size: 14px;
+    border-right: 4px solid #00de9a;
+    margin-right: 189px;
+    margin-top: 26px;
+    padding: 10px;
+    padding-right: 44px;
+}
+.contact-us__information{
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-us__information__form{
+    width: 444px;
+}
+.contact-us__information__form p{
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 24px;
+}
+.contact-us__information__form input{
+    width: 444px;
+    height: 46px;
+    border-radius: 10px;
+    border: 1px solid #dfdddd;
+    padding-right: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.contact-us__information__form input:hover{
+    border: 1px solid #1894ff;
+}
+.contact-us__information__form input:focus{
+    border: 1.3px solid #1894ff;
+    outline: none!important;
+}
+.contact-us__information__form textarea{
+    width: 444px;
+    height: 174px;
+    border: 1px solid #dfdddd;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.contact-us__information__form textarea:hover{
+    border: 1px solid #1894ff;
+}
+.contact-us__information__form textarea:focus{
+    border: 1.3px solid #1894ff;
+    outline: none!important;
+}
+.contact-us__information__form button{
+    width: 444px;
+    height: 52px;
+    border: 1px solid #1894ff;
+    border-radius: 10px;
+    color: #1894ff;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+.map__infobox{
+    width: 545px;
+    height: 170px;
+    background-color: white;
+    margin-top: 290px;
+    margin-right: 30px;
+    display: flex;
+    border-radius: 10px;
+}
+.contact-us__information__map{
+    width: 605px;
+    background-image: url(img/Map.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.map__infobox--right{
+    padding-top: 17px;
+    padding-right: 30px;
+    width: 280px;
+}
+.map__infobox--right p{
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.map__infobox--right h3{
+    font-size: 16px;
+    color: #1894ff;
+    padding-left: 120px;
+}
+.map__infobox--left{
+    padding-top: 17px;
+    padding-right: 5px;
+    width: 208px;
+}
+.map__infobox--left p{
+    line-height: 36px;
+}
+.map__infobox--left__text{
+    font-weight: lighter;
+}
+a{
+    text-decoration: none;
+} 
+@media only screen and (max-width: 2000px){
+    .option__container h2{
+        margin-right: 297px;
+    }
+}
+@media only screen and (max-width: 1748px){
+    .option__container h2{
+        margin-right: 246px;
+    }
+}
+@media only screen and (max-width: 1588px){
+    .option__container h2{
+        margin-right: 168px;
+    }
+}
+@media only screen and (max-width: 1348px){
+    .option__container h2{
+        margin-right: 135px;
+    }
+}
+@media only screen and (max-width: 1324px){
+    .question__title{
+        background-image:none;
+    }
+    .membership__numbers{
+        background-image: none;
+    }
+}
+@media only screen and (max-width: 1166px){
+    .download__container__infoBox h2{
+        font-size: 22px;
+    }
+    .download__container__infoBox p{
+        font-size: 14px;
+    }
+    .download__container__img--app-prev img{
+        width: 500px;
+        height: 497px;
+        margin-top: 72px;
+    }
+    .download__button button{
+        width: 135px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    .download__button img{
+        width: 140px;
+        padding-left: 5px;
+    }
+    .download__button--first div img{
+        width: 25px;
+        padding-top: 5px;
+    }
+    .download__button--first div {
+        margin-top: -13px;
+        padding-top: 5px;
+    }
+    .download__container__infoBox__input{
+        width: 430px;
+        height: 60px;
+    }
+    .download__container__infoBox__input input{
+        width: 330px;
+        height: 40px;
+    }
+    .download__container__infoBox__input button{
+        width: 70px;
+        height: 40px;
+    }
+    .download__container__infoBox__input input::placeholder{
+        font-size: 14px;
+    }
+    .download__button--first div p{
+        margin-top: -10px;
+        margin-bottom: 12px;
+    }
+}
+@media only screen and (max-width: 1152px){
+    .content__image--cloud{
+        width: 738px;
+        height: 507.92px;
+    }
+    .content__information h1{
+        font-size: 30px;
+    }
+    .content__information p{
+        font-size: 16px;
+    }
+    .content__information .content__information__button--download{
+        font-size: 14px;
+        width: 153px;
+        height: 49px;
+    }
+    .content__information .content__information__button--login{
+        font-size: 14px;
+        width: 153px;
+        height: 49px;
+    }
+}
+ @media only screen and (max-width: 1104px){
+    .login__container--inside__infoBox{
+        width: 400px;
+    }
+    .login__container--inside{
+        width: 900px;
+        height: 410.38px;
+        padding-top: 76px;
+    }
+    .login__container--inside h2{
+        font-size: 18px;
+        color: #2361b5;
+    }
+    .login__container--inside p{
+        font-size: 14px;
+    }
+    .login__container--inside__img img{
+        width: 350px;
+    }
+    .login__container__infoBox__input{
+        width: 374px;
+        height: 60px;
+    }
+    .login__container__infoBox__input input{
+        width: 250px;
+        height: 40px;
+    }
+    .login__container__infoBox__input button{
+        width: 103px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .login__container__infoBox__input input::placeholder{
+        font-size: 13px;
+    }
+    .membership__info__input{
+        width: 430px;
+        height: 60px;
+    }
+    .membership__info__input input{
+        width: 330px;
+        height: 40px;
+    }
+    .membership__info__input input::placeholder{
+        font-size: 14px;
+    }
+    .membership__info__input button{
+        width: 82px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .footer__download img{
+        display: block;
+        padding-top: 10px;
+    }
+    .footer__download{
+        margin-left: 5px;
+    }
+    .membership__drugstore--down{
+        margin-right: 100px;
+    }
+    .membership__drugstore--up{
+        width: 386px;
+        padding-right: 4px;
+        margin-left: 65px;
+    }
+    .membership__info{
+        width: 480px;
+    }
+    .membership__option__card--drugstore{
+        width: 400px;
+    }
+    .membership__option__card--drugstore button{
+        margin: 33px 113px;
+    }
+    .membership__option__card--makeup button{
+        margin: 33px 113px;
+    }
+    .membership__option__card--makeup{
+        width: 400px;
+    }
+    .contact-us__information__form{
+        width: 360px;
+    }
+    .contact-us__information__form input{
+        width: 360px;
+        height: 40px;
+    }
+    .contact-us__information__form textarea{
+        width: 360px;
+        height: 150px;
+    }
+    .contact-us__information__form button{
+        width: 360px;
+        height: 48px;
+    }
+    .contact-us__information__map{
+        width: 491px;
+    }
+    .map__infobox{
+        width: 473px;
+        height: 161px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+     .map__infobox--left{
+        padding: 0;
+        margin-right: 10px;
+    
+    }
+    .map__infobox--right{
+        padding: 0;
+        padding-right: 29px;
+    } 
+    .map__infobox--right h3{
+        font-size: 16px;
+        color: #1894ff;
+        padding-left: 150px;
+    }
+    
+    .support__header--phone{
+        display: block;
+        text-align: center;
+    }
+    .support__header--desktop{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width:1000px){
+    .content__image--cloud{
+        width: 650px;
+        height: 450.92px;
+        margin-top: 40px;
+    }
+    .content__information {
+        padding-top: 228px;
+        width: 700px;
+        padding-right: 80px;
+    }
+}
+@media only screen and (max-width:991.98px){
+    .download__container__infoBox__input{
+        width: 333px;
+    }
+    .download__container__infoBox__input input{
+        width: 243px;
+    }
+    .download__container__infoBox{
+        width: 348px;
+        padding-right: 14px;
+    }
+    .download__button button{
+        display: block;
+        margin: 10px auto;
+    }
+    .download__button img{
+        display: block;
+    }
+    .download__container__img--app-prev{
+        margin: 0 auto; 
+    }
+    .download__container__img--app-prev img{
+        padding: 0;
+        margin: 0 auto;
+        width: 509px;
+        height: 508px;
+        margin-top: 10px;
+        overflow-y: hidden;
+    }
+    .download__container__infoBox {
+        padding-top: 86px;
+    }
+    .download__container__infoBox__input input::placeholder{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:900px){
+    .content{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .content__image--cloud{
+        display: none;
+    }
+    .content__image__display--none{
+        display: block;
+        margin: 50px auto;
+        width: 450px;
+    }
+    .content__information{
+        padding-top: 0;
+        margin: 20px auto;
+        width: 450px;
+        padding-right: 70px;
+    }
+    .about{
+        display: flex;
+        flex-flow: column;
+        margin-top: 70px;
+    }
+    .content__information .content__information__button--download{
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .content__information .content__information__button--login{
+    margin-right: -11px;
+
+    }
+    .content__information h1{
+        font-size: 24px;
+    }
+    .content__information p{
+        font-size: 14px;
+    }
+    .about__video{
+        margin: 10px auto;
+    }
+    .about__container{
+        margin: 20px auto;
+    }
+    .about__description__display--none p{
+        font-size: 14px;
+        padding: -10px;
+    }
+    .about__description__display--none h2{
+        font-size: 22px;
+        max-height: 34px;
+    }
+    .option__content{
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 0;
+    }
+    .option__content__box{
+        margin: 0 auto;
+        width: 760px;
+        height: 240px;
+    }
+    .option__content__info{
+        margin: 25px auto;
+        width: 383px;
+        height: 466px;
+    }
+    .grid__container{
+        display: flex;
+        flex-flow: row;
+        width: 1121px;
+    }
+    .grid__container > div {
+        width: 160px;
+        height: 160px;
+    }
+    .option__content__container--step-text p{
+        font-size: 12px;
+        padding-right: 10px;
+        padding-bottom: 27px;
+    }
+    .option__content__container--step-text h3{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .option__content__container--step{
+        padding-top: 50px;
+    }
+    .download__container__infoBox__input{
+        width: 297px;
+    }
+    .download__container__infoBox__input input{
+        width: 212px;
+    }
+    .download__container__img--app-prev{
+        margin: 0 auto; 
+    }
+    .download__container__img--app-prev img{
+        padding: 0;
+        margin: 0 auto;
+        width: 509px;
+        height: 508px;
+        margin-top: 10px;
+        overflow-y: hidden;
+    }
+    .login__container{
+        background-image: none;
+    }
+    .login__container--inside{
+        display: flex;
+        flex-flow: column-reverse;
+        width: 435px;
+        height: 651px;
+        padding-top: 0;
+        margin-top: 90px;
+    }
+    .login__container--inside__img img{
+        width: 262.26px;
+        height: 245.66px;
+        margin: 35px auto;
+        margin-right: 80px;
+    }
+    .login__container--inside h2{
+        color: #2361b5;
+        font-size: 16px;
+        border-right: 3px solid #00de9a;
+        max-height: 25px;
+        padding: 0 10px;
+        overflow-y: hidden;
+        margin-right: 30px;
+        margin-bottom: 8px;
+    }
+    .login__container--inside p{
+        font-size: 14px;
+        line-height: 36px;
+        margin-right: 30px;
+        margin-left: 30px;
+        width: 291px;
+        padding-top: 20px;
+    }
+    .login__container__infoBox__input{
+        width: 357px;
+        height: 54.14px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .login__container__infoBox__input input{
+        width: 239px;
+    }
+    .login__container__infoBox__input button{
+        width: 93px;
+        margin-top: 0;
+    }
+    .membership__info__input{
+        width: 424px;
+        height: 58.14px;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    .membership__info__input input{
+        width: 321px;
+    }
+    .membership__info__input button{
+        width: 83px;
+    }
+    .footer__info{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .footer__info__social{
+        text-align: center;
+    }
+    .footer__service h3{
+        font-size: 15px;
+    }
+    .footer__pages h3{
+        font-size: 15px;
+    }
+    .footer__download h3{
+        font-size: 15px;
+    }
+    .membership{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .membership__drugstore--up{
+        margin: 35px auto;
+    }
+    .membership__display--block{
+        display: flex;
+    }
+    .landing-down-block{
+        display: flex;
+    }
+    .membership__drugstore--middle{
+        margin-right: 227px;
+    }
+    .membership__drugstore--down{
+        margin-right: 196px;
+        margin-bottom: 24px;
+    }
+    .membership__info{
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 444.5px;
+        height: 313px;
+    }
+    .membership__info h3{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .membership__info p{
+        font-size: 14px;
+    }
+    .membership__numbers{
+        text-align: center;
+        margin-top: 0;
+    }
+    .membership__numbers__block{
+        padding-bottom: 57px;
+    }
+    .membership__option__card{
+        flex-flow: column;
+        margin: 0 auto;
+    }
+    .membership__option__card--drugstore{
+        margin: 29px auto;
+    }
+    .membership__option__card--drugstore button{
+        margin: 33px 116px;
+    }
+    .membership__option__card--makeup button{
+        margin: 33px 116px;
+    }
+    .membership__option__card--drugstore img{
+        padding-right: 135px;
+    }
+    .membership__option__card--makeup{
+        margin: 29px auto;
+    }
+    .membership__option p{
+        text-align: right;
+    }
+    .membership__option__text--desktop{
+        display: none;
+    }
+    .membership__option__text--phone{
+        display: block;
+    }
+    .membership__option > p{
+        line-height: 26px;
+        margin: 0;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .membership__option h3{
+        text-align: center;
+        border-right: 0;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .question__infoBox__card{
+        overflow-x: scroll;
+    }
+    .question__cards{
+        display: flex;
+        overflow-x:scroll;
+        flex-flow: row;
+        width: 1000px;
+        justify-content: flex-start;
+    }
+    .question__cards--drugstore{
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+    .question__cards--shop{
+        margin-left: 60px;
+    }
+    .question__cards--visit{
+        margin-left: 60px;
+    }
+    .question__cards--online{
+        margin-left: 60px;
+    }
+    .description__display--block{
+        display: none;
+    }
+    .question__infoBox{
+        margin-bottom: 50px;
+    }
+    .contact-us__information{
+        flex-flow: column-reverse;
+        margin: 0 auto;
+    }
+    .contact-us__information__form{
+        margin: 45px auto;
+        width: 469px;
+    }
+    .contact-us__information__form input{
+        width: 458px;
+    }
+    .contact-us__information__form textarea{
+        width: 458px;
+    }
+    .contact-us__information__form button{
+        width: 458px;
+    }
+    .map__infobox{
+        display: flex;
+        flex-flow: column;
+        width: 359px;
+        margin-right: 34px;
+    }
+    .map__infobox--left{
+        padding: 0;
+        width: 486px;
+    }
+    .map__infobox--left p{
+        font-size: 15px;
+        line-height: 32px;
+        padding: 0 10px;
+    }
+    .contact-us__information__map{
+        width: 491px;
+        height: 399px;
+        margin: 45px auto;
+        padding: 0;
+    }
+    .map__infobox{
+        width: 473px;
+        height: 203px;
+        overflow-y: hidden;
+        margin-top: 175px;
+        margin-right: 5px;
+    }
+    .map__infobox--right{
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 20px;
+        width: 485px;
+    }
+    .map__infobox--right h3{
+        font-size: 16px;
+    }
+    .option__container h2{
+        margin-right: 30px;
+        margin-top: 100px;
+    }
+    .download__container__infoBox__input input::placeholder{
+        font-size: 12px;
+    }
+    .footer__service ul li{
+        font-size: 14px;
+    }
+    .footer__pages ul li{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:767.98px){
+    .content{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .content__image--cloud{
+        display: none;
+    }
+    .content__image__display--none{
+        margin: 50px auto;
+        width: 400px;
+    }
+    .content__information{
+        padding-top: 0;
+        margin: 20px auto;
+        width: 450px;
+        padding-right: 70px;
+    }
+    .about{
+        display: flex;
+        flex-flow: column;
+        margin-top: 70px;
+    }
+    .content__information .content__information__button--download{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .content__information .content__information__button--login{
+        margin-right: -11px;
+    }
+    .content__information h1{
+        font-size: 24px;
+    }
+    .content__information p{
+        font-size: 14px;
+    }
+    .about__video{
+        margin: 10px auto;
+    }
+    .about__container{
+        display: none;
+    }
+    .about__description__display--none{
+        display: block;
+        width: 302px;
+        margin: 0 auto;
+    }
+    .about__description__display--none p{
+        font-size: 14px;
+        padding: -10px;
+    }
+    .about__description__display--none h2{
+        font-size: 22px;
+        max-height: 34px;
+    }
+    .option__content{
+        display: flex;
+        flex-flow: column;
+    }
+    .option__content__box{
+        margin: 0 auto;
+        overflow-x: scroll;
+    }
+    .option__content__info{
+        margin: 25px auto;
+        width: 383px;
+        height: 466px;
+    }
+    .option__content__container--step-text p{
+        font-size: 12px;
+        padding-right: 10px;
+        padding-bottom: 27px;
+    }
+    .option__content__container--step-text h3{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .option__content__container--step{
+        padding-top: 50px;
+    }
+    .download__container{
+        background-image: none;
+        flex-flow: column;
+    }
+    .download__container__infoBox{
+        margin:0 auto ;
+        padding-top: 45px;
+    }
+    .download__container__infoBox h2{
+        padding-right: 25px;
+    }
+    .img-d-none{
+        display: none;
+    }
+    .img-d-block{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .download__button {
+        margin: 0 auto;
+        margin-left: 12px;
+    }
+    .download__container__infoBox__input{
+        width: 317px;
+        height: 54.14px;
+    }
+    .download__container__infoBox__input input{
+        width: 246px;
+    }
+    .download__container__infoBox__input button{
+        width: 59px;
+    }
+    .download__container__img--app-prev{
+        margin: 0 auto; 
+    }
+    .download__container__img--app-prev img{
+        padding: 0;
+        margin: 0 auto;
+        width: 370px;
+        height: 368px;
+        margin-top: 18px;
+        overflow-y: hidden;
+    }
+    .login__container{
+        background-image: none;
+    }
+    .login__container--inside{
+        display: flex;
+        flex-flow: column-reverse;
+        width: 435px;
+        height: 651px;
+        padding-top: 0;
+        margin-top: 90px;
+        margin-bottom: 80px;
+    }
+    .login__container--inside__img img{
+        width: 262.26px;
+        height: 245.66px;
+        margin: 35px auto;
+        margin-right: 80px;
+    }
+    .login__container--inside h2{
+        color: #1894ff;
+        font-size: 16px;
+        border-right: 3px solid #00de9a;
+        max-height: 25px;
+        padding: 0 10px;
+        line-height: 27px;
+        overflow-y: hidden;
+        margin-right: 30px;
+    }
+    .login__container--inside p{
+        font-size: 14px;
+        line-height: 36px;
+        margin-right: 30px;
+        margin-left: 30px;
+        width: 291px;
+        padding-top: 20px;
+    }
+    .login__container__infoBox__input{
+        width: 357px;
+        height: 54.14px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .login__container__infoBox__input input{
+        width: 239px;
+    }
+    .login__container__infoBox__input button{
+        width: 93px;
+    }
+    .support__information{
+        flex-flow: column;
+    }
+    .support{
+        display: flex;
+        flex-flow: column;
+        height: 170px;
+        padding-top: 15px;
+       align-items: center;
+    }
+    .footer__display--block{
+        display: none;
+    }
+    .footer__info{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .footer__info__social{
+        text-align: center;
+    }
+    .membership{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .membership__drugstore--up{
+        margin: 34px auto;
+    }
+    .membership__display--block{
+        display: none;
+    }
+    .landing-down-block{
+        display: none;
+    }
+    .membership__info{
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 400.5px;
+        height: 305px;
+    }
+    .membership__info h3{
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .membership__info p{
+        font-size: 14px;
+        width: 400px;
+    }
+    .membership__info__input{
+        width: 393px;
+    }
+    .membership__info__input input{
+        width: 289px;
+    }
+    .membership__numbers{
+        text-align: center;
+        margin-top: 0;
+    }
+    .membership__numbers__block{
+        padding-bottom: 57px;
+    }
+    .membership__option__card{
+        flex-flow: column;
+        margin: 0 auto;
+    }
+    .membership__option__card--drugstore{
+        margin: 29px auto;
+    }
+    .membership__option__card--makeup{
+        margin: 29px auto;
+    }
+    .membership__option p{
+        text-align: right;
+    }
+    .membership__option__text--desktop{
+        display: none;
+    }
+    .membership__option__text--phone{
+        display: block;  
+    }
+    .membership__option > p{
+        font-size: 12px;
+        margin: 0;
+        text-align: center;
+    }
+    .membership__option h3{
+        text-align: center;
+        border-right: 0;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .description__display--block{
+        display: none;
+    }
+    .question__infoBox{
+        margin-bottom: 50px;
+    }
+    .contact-us__information{
+        flex-flow: column-reverse;
+        margin: 0 auto;
+    }
+    .contact-us__information__map{
+        margin: 45px auto;
+        width: 423px;
+    }
+    .contact-us__information__form{
+        margin: 45px auto;
+        width: 429px;
+    }
+    .contact-us__information__form input{
+        width: 423px;
+    }
+    .contact-us__information__form textarea{
+        width: 423px;
+    }
+    .contact-us__information__form button{
+        width: 423px;
+    }
+    .map__infobox{
+        display: flex;
+        flex-flow: column;
+        width: 411px;
+        height: 209px;
+    }
+    .map__infobox--left{
+        padding: 0;
+        width: 408px;
+    }
+    .map__infobox--left p{
+        font-size: 14px;
+        line-height: 32px;
+        padding: 0 10px;
+    }
+    .contact-us__information__map{
+        height: 399px;
+        margin: 45px auto;
+        padding: 0;
+    }
+    .map__infobox{
+        overflow-y: hidden;
+        margin-top: 175px;
+        margin-right: 5px;
+    }
+    .map__infobox--right{
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 20px;
+
+    }
+    .map__infobox--right h3{
+        font-size: 16px;
+    }
+    .question__infoBox__description{
+        margin-right: 75px;
+    }
+    .description-minus{
+        margin-right: 154px;
+    }
+}
+@media only screen and (max-width:575.98px){
+    .content{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .content__image--cloud{
+        display: none;
+    }
+    .content__image__display--none{
+        display: block;
+        margin: 50px auto;
+        width: 300px;
+    }
+    .content__information{
+        padding-top: 0;
+        margin: 20px auto;
+        width: 400px;
+        padding-right: 117px;
+    }
+    .about{
+        display: flex;
+        flex-flow: column;
+        margin-top: 70px;
+    }
+    .content__information .content__information__button--login{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .content__information h1{
+        font-size: 24px;
+    }
+    .content__information p{
+        font-size: 14px;
+    }
+    .about__video{
+        margin: 10px auto;
+    }
+    .about__container__card{
+        display: none;
+    }
+    .about__description__display--none{
+        display: block;
+        width: 302px;
+        margin: 0 auto;
+    }
+    .about__description__display--none p{
+        font-size: 12px;
+        padding: -10px;
+    }
+    .option__content{
+        display: flex;
+        flex-flow: column;
+    }
+    .option__content__box{
+        margin: 0 auto;
+    }
+    .option__content__info{
+        margin: 25px auto;
+        width: 383px;
+        height: 466px;
+    }
+    .option__content__container--step-text p{
+        font-size: 12px;
+        padding-right: 10px;
+        padding-bottom: 27px;
+    }
+    .option__content__container--step-text h3{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .option__content__container--step{
+        padding-top: 50px;
+    }
+    .download__container{
+        background-image: none;
+        flex-flow: column;
+    }
+    .download__container__infoBox{
+        margin:0 auto ;
+    }
+    .download__container__infoBox h2{
+        padding-right: 25px;
+    }
+    .img-d-none{
+        display: none;
+    }
+    .img-d-block{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .download__button{
+       margin: 0 auto;
+       width: 250px;
+       margin-left: 47px;
+    }
+    .download__container__infoBox__input{
+        width: 317px;
+        height: 54.14px;
+    }
+    .download__container__infoBox__input input{
+        width: 246px;
+    }
+    .download__container__infoBox__input button{
+        width: 59px;
+    }
+    .download__container__img--app-prev{
+        margin: 0 auto; 
+    }
+    .download__container__img--app-prev img{
+        padding: 0;
+        margin: 0 auto;
+        width: 370px;
+        height: 368px;
+        margin-top: 18px;
+        overflow-y: hidden;
+    }
+    .login__container{
+        background-image: none;
+    }
+    .login__container--inside{
+        display: flex;
+        flex-flow: column-reverse;
+        width: 380px;
+        height: 630px;
+        padding-top: 0;
+        margin-top: 90px;
+    }
+    .login__container--inside__img img{
+        width: 262.26px;
+        height: 245.66px;
+        margin: 35px auto;
+        margin-right: 40px;
+    }
+    .login__container--inside h2{
+        color: #1894ff;
+        font-size: 16px;
+        border-right: 3px solid #00de9a;
+        max-height: 25px;
+        padding: 0 10px;
+        line-height: 27px;
+        overflow-y: hidden;
+        margin-right: 30px;
+    }
+    .membership__option__card--drugstore{
+        width: 335px;
+    }
+    .membership__option__card--makeup{
+        width: 335px;
+    }
+    .membership__option__card--drugstore-text{
+        padding-right: 4px;
+    }
+    .membership__option__card--makeup p{
+        padding-right: 4px;
+    }
+    .membership__option__card--drugstore img{
+        padding-right: 92px;
+    }
+    .membership__option__card--makeup img{
+        padding-right: 110px;
+    }
+    .membership__option__card--drugstore button{
+        margin: 33px 86px;
+    }
+    .membership__option__card--makeup button{
+        margin: 33px 86px;
+    }
+    .login__container--inside p{
+        font-size: 12px;
+        line-height: 36px;
+        margin-right: 30px;
+        margin-left: 30px;
+        width: 262px;
+        padding-top: 20px;
+    }
+    .login__container__infoBox__input{
+        width: 357px;
+        height: 54.14px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+    .login__container__infoBox__input input{
+        width: 143px;
+    }
+    .login__container__infoBox__input button{
+        width: 93px;
+        margin-right: 102px;
+    }
+    .footer__display--block{
+        display: none;
+    }
+    .footer__info{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .footer__info__social{
+        text-align: center;
+    }
+    .membership{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .membership__drugstore--up{
+        margin: 20px auto;
+        width: 355px;
+    }
+    .membership__display--block{
+        display: none;
+    }
+    .landing-down-block{
+        display: none;
+    }
+    .membership__info{
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 342px;
+        height: 313px;
+    }
+    .membership__info h3{
+        font-size: 21px;
+        line-height: 36px;
+        width: 342px;
+    }
+    .membership__info p{
+        font-size: 14px;
+        width: 342px;
+    }
+    .membership__drugstore--up--footer p{
+        font-size: 12px;
+    }
+    .membership__numbers{
+        flex-flow: column;
+        text-align: center;
+        height: 450px;
+        margin-top: 0;
+    }
+    .membership__numbers__block{
+        padding-bottom: 57px;
+        padding-top: 20px;
+    }
+    .membership__option__card{
+        flex-flow: column;
+        margin: 0 auto;
+    }
+    .membership__option__card--drugstore{
+        margin: 29px auto;
+    }
+    .membership__option__card--makeup{
+        margin: 29px auto;
+    }
+    .membership__option p{
+        text-align: right;
+    }
+    .membership__option__text--desktop{
+        display: none;
+    }
+    .membership__option__text--phone{
+        display: block;  
+    }
+    .membership__info__input{
+        width: 327px;
+    }
+    .membership__info__input input{
+        width: 141px;
+    }
+    .membership__info__input button{
+        margin-right: 90px;
+    }
+    .membership__option > p{
+        font-size: 12px;
+        margin: 0;
+        text-align: center;
+    }
+    .membership__option h3{
+        text-align: center;
+        border-right: 0;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .description__display--block{
+        display: none;
+    }
+    .question__infoBox{
+        margin-bottom: 50px;
+    }
+    .contact-us__information{
+        flex-flow: column-reverse;
+        margin: 0 auto;
+    }
+    .contact-us__information__map{
+        margin: 45px auto;
+        width: 374px;
+    }
+    .contact-us__information__form{
+        margin: 45px auto;
+        text-align: center;
+    }
+    .contact-us__information__form p{
+        text-align: right;
+        margin-right: 40px;
+    }
+    .contact-us__information__form input{
+        width: 360px;
+    }
+    .contact-us__information__form textarea{
+        width: 360px;
+    }
+    .contact-us__information__form button{
+        width: 360px;
+    }
+    .map__infobox{
+        display: flex;
+        flex-flow: column;
+        width: 361px;
+    }
+    .map__infobox--left{
+        padding: 0;
+        width: 351px;
+    }
+    .map__infobox--left p{
+        font-size: 12px;
+        line-height: 32px;
+        padding: 0 10px;
+    }
+    .contact-us__information__map{
+        height: 399px;
+        padding: 0;
+    }
+    .map__infobox{
+        height: 219px;
+        overflow-y: hidden;
+        margin-top: 175px;
+        margin-right: 5px;
+    }
+    .map__infobox--right{
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 20px;
+        width: 425px;
+    }
+    .map__infobox--right h3{
+        font-size: 12px;
+    }
+
+    .question__infoBox__description{
+        margin-right: 30px;
+    }
+    .question__infoBox__description h3{
+        font-size: 12px;
+    }
+    .description-minus{
+        font-size: 12px;
+        margin-right: 96px;
+        padding-right: 22px;
+    }
+    .question__infoBox h2{
+        margin-right: 71px;
+    }
+}
+@media only screen and (max-width:400px){
+    .support img{
+        width: 207px;
+    }
+    .login__container--inside{
+        width: 280px;
+        margin-top: 90px;
+    }
+    .login__container--inside__img img{
+        width: 233.26px;
+        margin: 17px auto;
+        margin-right: 15px;
+    }
+    .login__container--inside p{
+        width: 232px;
+    }
+    .login__container__infoBox__input{
+        width: 259px;
+    }
+    .login__container__infoBox__input input{
+        width: 143px;
+    }
+    .login__container__infoBox__input button{
+        width: 78px;
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-right: 20px;
+    }
+    .download__container__infoBox p{
+        padding-right: 15px;
+    }
+    .download__container__infoBox h2{
+        padding-right: 15px;
+    }
+    .download__container__infoBox__input{
+        width: 239px;
+        margin: 40px auto;
+    }
+    .download__container__infoBox__input input{
+        width: 124px;
+    }
+    .download__container__infoBox__input button{
+        width: 59px;
+        margin-right: 34px;
+    }
+    .download__container__infoBox{
+        width: 280px;
+    }
+    .download__container__img--app-prev img{
+        width: 308px;
+        height: 306px;
+        margin-top: 37px;
+    }
+    .option__content__info{
+        width: 300px;
+        overflow-y: hidden;
+    }
+    .option__content__container--step-text p{
+        padding-right: 15px;
+        padding-bottom: 7px;
+    }
+    .option__content__container--step-text h3{
+        padding-right: 5px;
+    }
+    .about{
+        width: 297px;
+        margin: 10px auto;
+        margin-top: 50px;
+    }
+    .about__video img{
+        width: 275.67px;
+    }
+    .content__image__display--none{
+        width: 211px;
+    }
+    .content__information{
+        padding-right: 0;
+        margin: 20px auto;
+        width: 207px;
+    }
+    .membership__info{
+        width: 281px;
+        height: 344px;
+    }
+    .membership__info h3{
+        font-size: 14px;
+        width: 327px;
+    }
+    .membership__info p{
+        width: 281px;
+    }
+    .membership__info__input{
+        width: 278px;
+    }
+    .membership__info__input input{
+        width: 143px;
+    }
+    .membership__info__input button{
+        margin-right: 38px;
+    }
+    .membership__drugstore--up{
+        width: 279px;
+    }
+    .membership__drugstore__img img{
+        width: 65px;
+    }
+    .membership__drugstore--up--footer{
+        width: 167px;
+    }
+    .membership__drugstore--up--header{
+        font-size: 14px;
+        padding-left: 13px;
+        padding-top: 10px;
+    }
+    .membership__option__card--drugstore{
+        width: 294px;
+    }
+    .membership__option__card--makeup{
+        width: 294px;
+    }
+    .membership__option__card--drugstore img{
+        padding-right: 72px;
+        width: 200px;
+    }
+    .membership__option__card--makeup img{
+        padding-right: 82px;
+        width: 200px;
+        height: 203px;
+    }
+    .membership__option p{
+        text-align: right;
+        width: 290px;
+    }
+    .membership__option__card--drugstore button{
+        margin-right: 65px;
+    }
+    .membership__option__card--makeup button{
+        margin-right: 65px;
+    }
+    .membership__option > p{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .question__infoBox__description{
+        margin-right: 13px;
+    }
+    .question__infoBox__description h3{
+        padding-right: 23px;
+        font-size: 11px;
+    }
+    .description-minus{
+        font-size: 11px;
+        margin-right:59px;
+        padding-right: 17px;
+    }
+    .question__infoBox h2 {
+        margin-right: 43px;
+        font-size: 16px;
+    }
+    .contact-us__information__map{
+        width: 282px;
+    }
+    .map__infobox{
+        width: 270px;
+    }
+    .map__infobox--right{
+        width: 316px;
+    }
+    .map__infobox--left{
+        width: 264px;
+    }
+    .contact-us__information__form{
+        text-align: center;
+        padding: 0;
+    }
+    .contact-us__information__form p{
+        margin-right: 67px;
+    }
+    .contact-us__information__form input{
+        width: 264px;
+        margin-right: -45px;
+    }
+    .contact-us__information__form textarea{
+        width: 264px;
+        margin-right: -45px;
+    }
+    .contact-us__information__form button{
+        width: 264px;
+        margin-right: -45px;
+    }
+    .membership__drugstore--up--text{
+        width: 68px;
+        margin-top: 7px;
+    }
+}
